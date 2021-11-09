@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geometricas</title>
+    <link rel="stylesheet" href="./StyleFiguras.css">
 </head>
 <body>
-<header></header>
+<header>
     <h1>
-        Figuras Geometricas
+    Figuras Geometricas
     </h1>
-    <p>Primer taller de java script donde se calculara las medidas de las figuras, triangulo, cuadrado, y circulo </p>
-</header>   
-<section>
+    <p> 
+    Primer taller de java script donde se calculara las medidas de las figuras, triangulo, cuadrado, y circulo 
+    </p>
+</header> 
+<main>
+    <div>
+    <section>
     <h2>Calcula el area y el perimetro de un cuadrado</h2>
     <form>
         <label for="Cuadrado">
@@ -27,8 +32,11 @@
             Area
         </button>
     </form>
-</section>
-<section>
+    </section>
+    </div>
+    
+    <div>
+    <section>
     <h2>Calcula el area y el perimetro de un Triangulo</h2>
     <form>
         <label>
@@ -57,9 +65,13 @@
         Area
         </button>
     </form>
-</section>
-<section>
-    <h2>Calcula el area y el perimetro de un Triangulo</h2>
+    </section>
+    
+    </div>
+
+    <div>
+    <section>
+    <h2>Calcula el area y el perimetro de un Circulo </h2>
     <form>
         <label for="circulo">
             Escribe cuanto mide cada lado de tu cuadrado:
@@ -73,8 +85,33 @@
         </button>
 
     </form>
-</section>
-    <script src="./figuras.js"> </script>
-    
+    </section>
+    </div>
+
+    <div>
+    <section>
+    <form>
+        <h2>Calcula la altura de tu triangulo isoseles</h2>
+        <label for="TrianguloIso">
+            Escribe cuanto mide la altura de tu triangulo isoseles:
+        </label>
+        
+        <label class="title_elements" for="TrianguloIsoV1">Lado1</label>
+        <input id="TrianguloIsoV1" type="number" placeholder="lado1" >
+        
+        <label for="TrianguloIsoV2">Lado2</label>
+        <input id="TrianguloIsoV2" type="number" placeholder="lado2">
+        
+        <label for="TrianguloIsoV3">Base</label>
+        <input id="TrianguloIsoV3" type="number" placeholder="Base">
+        
+        <button type="button" onclick="Triangulo_Isoseles()">
+            Altura
+        </button>
+    </form>
+    </section>
+    </div>
+</main>
+<script src="./figuras.js"> </script>
 </body>
 </html>

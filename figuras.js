@@ -144,3 +144,49 @@ function CalcularAreaCirculo (){
     const area= areaCirculo(value);
     alert (area);
 }
+
+//____________Activity triangule isoseles_____________
+
+
+console.group('isoseles');
+
+function TrianguloIsoseles (ladoA , ladoB , baseIso ) {
+
+    if ( ladoA != ladoB ) {
+        console.error("Los lados a y b no son iguales");}
+        else {
+
+            // Correnpondiendo a el el triangulo pequeño
+            
+            const TladoB = ladoB / 2;
+            const TladoBase = ladoA;
+            
+            // Elevar al cuadrado los lados de los triangulos 
+
+            const TladoB_al_cuadrado = TladoB *TladoB;
+            const TladoBase_al_cuadrado= TladoBase *TladoBase;
+
+            // ecuacion para altura 
+
+
+            const TladoA = Math.sqrt(TladoBase_al_cuadrado-TladoB_al_cuadrado);
+            const Taltura = TladoA;
+            return Taltura;   
+        }
+    }
+
+
+function Triangulo_Isoseles (){
+    const input = document.getElementById("TrianguloIsoV1");
+    const value0 = parseFloat(input.value);
+    const input1 = document.getElementById("TrianguloIsoV2");
+    const value1 = parseFloat(input1.value);
+    const input2 = document.getElementById("TrianguloIsoV3");
+    const base = parseFloat(input2.value);
+    const perimetroT= TrianguloIsoseles(value0,value1,base);
+    alert (perimetroT);
+}
+
+
+
+console.groupEnd();
