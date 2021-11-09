@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62,5%;
+}
+header {
+    position: relative;
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 90px;
+    max-height: 100px;
+}
+header h1 {
+    font-weight: bold;
+    text-align: center;
+    margin:5px;
+    font-size: 150%;
+}
+header p {
+    font-size: 90%;
+    text-align: center;
+
+}
+main {
+    align-content: center;
+    margin: 0 auto;
+
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: wheat;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+}
+main  div section {
+    position: relative;
+    border-radius: 20px;
+    width: 90%;
+    margin: 15px auto;
+    padding: 15px;
+    min-width: 288px ;
+    max-width: 400px;
+    min-height: 150px;
+    background-color:yellow;
+    display: inline-block;
+
+}
+main div section h2 {
+}
+main section label {
+}
+main section label .title_elements{
+}
+main  div section button {
+}
